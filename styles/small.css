@@ -112,6 +112,10 @@ header {
     grid-template-columns: repeat(1, 1fr);
 }
 
+#otherPages a.active {
+    text-decoration: underline;
+}
+
 /* ----------------- */
 /*[ Multiple Things ]*/
 /* ----------------- */
