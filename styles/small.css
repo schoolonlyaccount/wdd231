@@ -1,0 +1,241 @@
+/* ------------ */
+/*[ All Things ]*/
+/* ------------ */
+:root {
+    --primary-color: #254277;
+    --secondary-color: #7D99C9;
+    --tertiary-color: #922896;
+    --alt-text-color: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0 1rem 0rem 1rem;
+}
+
+img {
+    max-width: 100%
+}
+
+/* --------------- */
+/*[ Header Things ]*/
+/* --------------- */
+
+#logoAndName {
+    gap: 0.5rem;
+}
+
+nav {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease, border-color 0.8s ease;
+    border: 2px solid white;
+    justify-content: center;
+}
+
+#otherPages {
+    flex-direction: column;
+}
+
+nav.active {
+    max-height: 187px;
+    border-color: black;
+    transition: max-height, 0.4s ease, border-color 0s ease;
+}
+
+#navMiddle {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+header {
+    justify-content: space-between;
+}
+
+#hamburger {
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+}
+
+#otherPages a:hover {
+    background-color: var(--tertiary-color);
+}
+
+/* ------------------ */
+/*[ Exclusive Things ]*/
+/* ------------------ */
+.b img {
+    width: 70%;
+    max-width: 360px;
+    margin: 1.5rem auto;
+    border-radius: 6px;
+}
+
+#infoGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.c {
+    grid-column: auto;
+}
+
+#socials a {
+    margin: 0.5rem;
+}
+
+#socials img:hover {
+    transform: scale(1.4);
+}
+
+/* Courses */
+#courseButtons button {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+}
+
+#courseButtons {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+}
+
+#courses {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* ----------------- */
+/*[ Multiple Things ]*/
+/* ----------------- */
+header,
+#otherPages a,
+.a p,
+#socials,
+#footerEnd,
+#courseButtons button,
+header {
+    padding: 1rem;
+}
+
+main h1,
+.gridItem h2,
+.c p,
+#courses div {
+    padding: 0.5rem;
+}
+
+#logoAndName img,
+#socials img,
+.b img {
+    height: auto;
+}
+
+header span,
+#otherPages a {
+    font-size: 1.5rem;
+}
+
+.a p,
+#footerEnd,
+#courseButtons button {
+    font-size: 1.2rem;
+}
+
+#logoAndName,
+#otherPages,
+header,
+#otherPages {
+    display: flex;
+}
+
+.gridItem h2,
+#socials,
+#footerEnd,
+.c p,
+#courses div,
+#otherPages a {
+    text-align: center;
+}
+
+#otherPages a,
+#socials img,
+#all,
+#cse,
+#wdd {
+    transition: 0.2s ease-out all;
+}
+
+#otherPages,
+.gridItem h2,
+nav {
+    background-color: var(--primary-color);
+}
+
+.a,
+.b,
+#footerEnd,
+#courseButtons button,
+#courses div {
+    background-color: var(--secondary-color);
+}
+
+#otherPages a,
+.gridItem h2 {
+    color: var(--alt-text-color);
+}
+
+#otherPages a,
+#courseButtons button {
+    text-decoration: none;
+}
+
+.b img,
+#courseButtons button,
+#hamburger {
+    border: 1px solid black;
+}
+
+#courses,
+#courseButtons {
+    gap: 0.8rem;
+}
+
+#infoGrid,
+#courseButtons,
+#courses {
+    display: grid;
+}
+
+header,
+#logoAndName {
+    align-items: center;
+}
+
+.b img,
+#otherPages a {
+    display: block;
+}
+
+#courseButtons button:hover,
+#hamburger {
+    cursor: pointer;
+}
+
+#logoAndName img,
+#socials img {
+    width: 48px;
+}
+
+#all:hover,
+#cse:hover,
+#wdd:hover {
+    background-color: #F573F9;
+}

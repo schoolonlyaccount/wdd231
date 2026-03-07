@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        max-height: none;
+        overflow: visible;
+        justify-content: left;
+        border: none;
+    }
+
+    #otherPages {
+        flex-direction: row;
+    }
+
+    #otherPages a {
+        text-align: left;
+    }
+
+    #navMiddle {
+        border: none;
+    }
+
+    #infoGrid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .c {
+        grid-column: span 2;
+    }
+
+    #courseButtons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #courses {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

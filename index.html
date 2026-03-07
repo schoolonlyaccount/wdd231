@@ -2,16 +2,81 @@
 <html lang="en">
 
 <head>
+    <!-- Metas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <link rel="stylesheet" href="styles/normalize.css">
+    <meta name="author" content="Kell Brine">
+    <meta name="description" content="">
+
+    <!-- Misc -->
+    <title>Document</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="scripts/base.js" defer></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
-    <h1>WDD 231 - Kell Brine</h1>
+    <header>
+        <div id="logoAndName">
+            <img src="images/logo.svg" alt="Site Logo">
+            <span>Kell Brine</span>
+        </div>
+
+        <button id="hamburger">☰</button>
+    </header>
+    <nav>
+        <div id="otherPages">
+            <a href="index.html">Home</a>
+            <a id="navMiddle" href="chamber.html">Chamber Project</a>
+            <a href="final.html">Final Project</a>
+        </div>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div id="infoGrid">
+            <section class="gridItem a">
+                <h2>About Me</h2>
+                <p>Hello! I'm Kell Brine and I live in Mexico. I love video games and my pet donkey, Nacho!</p>
+            </section>
+            <section class="gridItem b">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Image of Kell Brine">
+            </section>
+            <section class="gridItem c">
+                <h2>Web Certificate Courses</h2>
+                <div id="courseButtons">
+                    <button id="all" class="courseFilter">All Courses</button>
+                    <button id="wdd" class="courseFilter">WDD Courses</button>
+                    <button id="cse" class="courseFilter">CSE Courses</button>
+                </div>
+
+                <div id="courses"></div>
+
+                <p>The total credits for course listed above is <span id="totalCredits"></span></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div id="socials">
+            <a href="https://github.com/schoolonlyaccount/wdd231"><img src="images/github-icon.svg" alt="Icon"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin-icon.svg" alt="Icon"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube-icon.svg" alt="Icon"></a>
+        </div>
+        <div id="footerEnd">
+            <p><span id="currentYear"></span> • Kell Brine • Mexico</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 
 </html>
-
-const daysUntil = `There are ${daycount} days until ${targetEvent}!`;
