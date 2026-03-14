@@ -1,0 +1,170 @@
+/* Everything */
+:root {
+    --primary-color: #63ABE9;
+    --secondary-color: #4042B0;
+    --background-color: #DA9020;
+    --nav-hover-color: #595B2C;
+    --border-color1: black;
+    --text-color1: black;
+    --text-color2: white;
+    --font-family: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+/* Header Content */
+header {
+    justify-content: space-between;
+}
+
+#logoAndName {
+    gap: 0.8rem;
+}
+
+#headerAndNav {
+    border-bottom: 2px solid var(--border-color1);
+}
+
+#currentPage {
+    text-decoration: underline;
+}
+
+/* Main Content */
+#memberButtons {
+    justify-content: center;
+    gap: 2rem;
+    display: flex;
+    padding: 1rem;
+}
+
+#showMembersGrid,
+#showMembersList {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+#membersContainer {
+    min-height: 800px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+.memberCard {
+    border: 2px solid var(--border-color1);
+    border-radius: 12px;
+    background-color: var(--primary-color);
+}
+
+.memberCard h2 {
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--text-color2);
+    background-color: var(--secondary-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.memberCard .memberImageAndText {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.memberCard img {
+    width: 128px;
+    height: 128px;
+    margin: auto 0;
+    border: 1px solid var(--border-color1);
+    border-radius: 12px;
+    margin-right: 1rem;
+    background-color: black;
+}
+
+.memberCard .memberJustText {
+    display: flex;
+    flex-direction: column;
+}
+
+.memberCard p {
+    margin-bottom: 0.5rem;
+}
+
+.memberCard p:first-child {
+    margin-top: 0.5rem;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.list .memberCard img {
+    display: none;
+}
+
+/* Footer Content */
+footer {
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    border-top: 2px solid var(--border-color1);
+    gap: 1.5rem;
+}
+
+#socials {
+    gap: 1rem;
+}
+
+#socials a {
+    transition: all 0.1s ease;
+}
+
+#socials a:hover {
+    transform: scale(1.4);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Multiple Things */
+header,
+footer {
+    background-color: var(--background-color);
+    color: black;
+}
+
+header,
+#logoAndName,
+#socials {
+    display: flex;
+}
+
+#logoAndName img,
+#socials img {
+    height: auto;
+}
+
+#logoAndName,
+footer {
+    align-items: center;
+}
+
+#socials img,
+#logoAndName img {
+    width: 48px;
+    /*48px*/
+}

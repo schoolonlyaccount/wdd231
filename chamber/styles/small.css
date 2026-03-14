@@ -1,0 +1,70 @@
+/* Header & Nav Container content*/
+
+#headerAndNav {
+    font-size: 1.5rem;
+}
+
+/* Header Content */
+#hamburger {
+    width: 96px;
+    height: auto;
+    font-size: 3rem;
+    border-radius: 16px;
+    border: none;
+    background-color: black;
+    color: var(--background-color);
+}
+
+#hamburger:hover {
+    cursor: pointer;
+}
+
+/* Nav Content */
+nav {
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #B59564;
+    border-top: 2px solid var(--background-color);
+    transition: max-height 0.2s ease, border-color 0.3s ease;
+}
+
+nav.active {
+    max-height: 179px;
+    border-color: black;
+    transition: max-height 0.2s ease, border-color 0s ease;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--border-color1);
+}
+
+nav a:last-child {
+    border-bottom: none;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-color);
+    color: var(--text-color2);
+}
+
+/* Multiple Things */
+#headerAndNav,
+nav,
+footer {
+    flex-direction: column;
+}
+
+#headerAndNav,
+nav,
+footer {
+    display: flex;
+}
+
+header,
+nav a {
+    padding: 0.5rem 1rem;
+}

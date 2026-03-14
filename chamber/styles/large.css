@@ -1,0 +1,50 @@
+@media (min-width: 768px) {
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        max-height: none;
+        border-top: none;
+        overflow: visible;
+        align-self: flex-end;
+        background: none;
+        border-color: var(--background-color);
+    }
+
+    nav a {
+        border-bottom: none;
+    }
+
+    nav a:hover {
+        border-radius: 4px;
+    }
+
+    header {
+        padding: 0;
+        background: none;
+    }
+
+    #headerAndNav {
+        justify-content: space-between;
+        background-color: var(--background-color);
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    #headerAndNav,
+    nav {
+        flex-direction: row;
+    }
+
+    #headerAndNav,
+    #otherPages {
+        display: flex;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
