@@ -39,6 +39,11 @@ header {
 }
 
 /* Main Content */
+main h1 {
+    padding: 1rem 0 0 2rem;
+    font-size: 3rem;
+}
+
 #memberButtons {
     justify-content: center;
     gap: 2rem;
