@@ -55,13 +55,8 @@ nav a:hover {
 #headerAndNav,
 nav,
 footer {
-    flex-direction: column;
-}
-
-#headerAndNav,
-nav,
-footer {
     display: flex;
+    flex-direction: column;
 }
 
 header,
