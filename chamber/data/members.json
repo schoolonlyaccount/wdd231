@@ -4,7 +4,7 @@
         "address": "1287 Maple Street, Suite 101, Brookside, TX 75018",
         "phone": "(214) 555‑3817",
         "website": "http://www.coffeeboysbrew.com",
-        "image": "../images/coffee-boys-logo.png",
+        "image": "coffee-boys-logo.png",
         "membershipLevel": 3,
         "description": "A laid‑back neighborhood coffee shop serving handcrafted espresso drinks, fresh pastries, and locally roasted coffee beans. Known for its cozy atmosphere and friendly baristas."
     },
@@ -13,7 +13,7 @@
         "address": "540 Greenfield Avenue, Brookdale, TX 75019",
         "phone": "(972) 555‑6420",
         "website": "http://www.adoptdapets.org",
-        "image": "../images/adopt-da-pets-logo.png",
+        "image": "adopt-da-pets-logo.png",
         "membershipLevel": 2,
         "description": "A community‑focused pet adoption center helping cats, dogs, and small animals find loving homes. Offers adoption events, pet care resources, and volunteer opportunities."
     },
@@ -22,7 +22,7 @@
         "address": "900 Ironworks Drive, Suite 220, Westgate, TX 75021",
         "phone": "(972) 685-1998",
         "website": "http://www.musclemakerfitness.com",
-        "image": "../images/muscle-maker-fitness-logo.png",
+        "image": "muscle-maker-fitness-logo.png",
         "membershipLevel": 3,
         "description": "A full‑service gym featuring strength training equipment, personal coaching, group fitness classes, and nutrition guidance for beginners and experienced athletes."
     },
@@ -31,7 +31,7 @@
         "address": "77 Grillmaster Lane, Downtown Plaza, Fairview, TX 75020",
         "phone": "(214) 555‑9086",
         "website": "http://www.houseofburgersgrill.com",
-        "image": "../images/house-of-burgers-logo.png",
+        "image": "house-of-burgers-logo.png",
         "membershipLevel": 1,
         "description": "A casual burger joint known for oversized gourmet burgers, crispy fries, and house‑made sauces. Popular for family dining and late‑night cravings."
     },
@@ -40,7 +40,7 @@
         "address": "315 Southern Comfort Road, Suite 5, Oakridge, TX 75017",
         "phone": "(972) 555‑1569",
         "website": "http://www.countryfriedpickles.com",
-        "image": "../images/country-fried-pickles-logo.png",
+        "image": "country-fried-pickles-logo.png",
         "membershipLevel": 2,
         "description": "A southern‑style snack shop specializing in crispy fried pickles, loaded appetizers, and comfort food favorites served in a rustic, fun environment."
     },
@@ -49,7 +49,7 @@
         "address": "480 Sweet Street, Candy Corner Plaza, Maplewood, TX 75023",
         "phone": "(940) 455-7244",
         "website": "http://www.joescandyland.com",
-        "image": "../images/joes-candy-land-logo.png",
+        "image": "joes-candy-land-logo.png",
         "membershipLevel": 1,
         "description": "A colorful candy store offering classic sweets, chocolate treats, novelty candies, and gift boxes for all ages."
     },
@@ -58,7 +58,7 @@
         "address": "1201 Storybook Avenue, Suite 12, Lakeside Village, TX 75024",
         "phone": "(214) 555‑7025",
         "website": "http://www.stellasstoreofbooks.com",
-        "image": "../images/stellas-store-of-books-logo.png",
+        "image": "stellas-store-of-books-logo.png",
         "membershipLevel": 2,
         "description": "A charming independent bookstore featuring new releases, rare finds, children’s books, and a cozy reading lounge with regular author events."
     }
