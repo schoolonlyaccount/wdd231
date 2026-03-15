@@ -102,10 +102,14 @@ main h1 {
 .memberCard .memberJustText {
     display: flex;
     flex-direction: column;
+    min-width: 0;
+    flex: 1;
 }
 
 .memberCard p {
     margin-bottom: 0.5rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .memberCard p:first-child {
