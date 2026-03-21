@@ -30,6 +30,10 @@ header {
     gap: 0.8rem;
 }
 
+#logoAndName span {
+    color: var(--text-color1);
+}
+
 #headerAndNav {
     border-bottom: 2px solid var(--border-color1);
 }
@@ -96,7 +100,6 @@ footer {
 }
 
 #contactInfo a,
-#headerAndNav,
 #footerEnd {
     color: var(--text-color1);
 }
