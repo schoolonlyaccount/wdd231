@@ -36,6 +36,7 @@ header {
 
 #headerAndNav {
     border-bottom: 2px solid var(--border-color1);
+    background-color: var(--text-color2);
 }
 
 #currentPage {
