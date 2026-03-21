@@ -30,10 +30,16 @@ header {
 
 #logoAndName {
     gap: 0.8rem;
+    background-color: var(--background-color);
 }
 
 #headerAndNav {
     border-bottom: 2px solid var(--border-color1);
+    color: var(--text-color1);
+}
+
+#headerAndNav>* {
+    background-color: var(--background-color);
 }
 
 #currentPage {
@@ -42,6 +48,7 @@ header {
 
 #otherPages {
     background-color: #B59564;
+    color: var(--text-color1);
 }
 
 /* Main Content */
@@ -75,7 +82,8 @@ footer {
 
 /* Multiple Things */
 header,
-footer {
+footer,
+#headerAndNav {
     background-color: var(--background-color);
 }
 
