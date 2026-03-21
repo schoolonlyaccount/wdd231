@@ -26,16 +26,15 @@ header {
     justify-content: space-between;
 }
 
-#logoAndName {
-    gap: 0.8rem;
-}
-
 #logoAndName span {
     color: var(--text-color1);
 }
 
+#logoAndName {
+    gap: 0.8rem;
+}
+
 #headerAndNav {
-    color: var(--text-color2);
     border-bottom: 2px solid var(--border-color1);
 }
 
@@ -55,6 +54,7 @@ footer {
     font-size: 1.4rem;
     border-top: 2px solid var(--border-color1);
     gap: 1.5rem;
+    background-color: var(--background-color);
 }
 
 #socials {
@@ -73,8 +73,7 @@ footer {
 
 /* Multiple Things */
 header,
-footer,
-#headerAndNav {
+footer {
     background-color: var(--background-color);
 }
 
