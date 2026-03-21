@@ -24,22 +24,22 @@ body {
 }
 
 /* Header Content */
+#headerAndNav,
+#headerAndNav * {
+    background-color: var(--background-color) !important;
+}
+
 header {
     justify-content: space-between;
 }
 
 #logoAndName {
     gap: 0.8rem;
-    background-color: var(--background-color);
 }
 
 #headerAndNav {
     border-bottom: 2px solid var(--border-color1);
     color: var(--text-color1);
-}
-
-#headerAndNav>* {
-    background-color: var(--background-color);
 }
 
 #currentPage {
