@@ -46,6 +46,10 @@
         display: flex;
     }
 
+    #otherPages {
+        background-color: var(--background-color);
+    }
+
     /* Footer */
     footer {
         flex-direction: row;
