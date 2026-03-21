@@ -25,7 +25,7 @@ nav {
 
 nav.active {
     max-height: 179px;
-    border-color: black;
+    border-color: var(--border-color1);
     transition: max-height 0.2s ease, border-color 0s ease;
 }
 
@@ -101,7 +101,7 @@ nav a:hover {
     border: 1px solid var(--border-color1);
     border-radius: 12px;
     margin-right: 1rem;
-    background-color: black;
+    background-color: var(--border-color1);
 }
 
 .memberCard .memberJustText,
@@ -142,9 +142,9 @@ nav a:hover {
 
 /* Hero image - Home page */
 #hero {
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
+    border-bottom: 2px solid var(--border-color1);
+    border-right: 2px solid var(--border-color1);
+    border-left: 2px solid var(--border-color1);
     position: relative;
     margin: 0 1rem;
     aspect-ratio: 16 / 6;
@@ -175,7 +175,7 @@ nav a:hover {
     width: 90%;
     max-width: 600px;
     z-index: 1;
-    color: white;
+    color: var(--text-color2);
     min-height: 150px;
 }
 
@@ -193,13 +193,13 @@ nav a:hover {
 }
 
 .homeSection {
-    border: 2px solid black;
+    border: 2px solid var(--border-color1);
     background-color: var(--primary-color);
 }
 
 .homeSection h2 {
     padding: 0.2rem 0.5rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--border-color1);
     background-color: var(--secondary-color);
     color: var(--text-color2);
 }

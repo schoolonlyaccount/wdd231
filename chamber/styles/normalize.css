@@ -19,15 +19,13 @@
 body {
     font-family: var(--font-family);
     font-weight: 400;
+    color: var(--text-color1);
+    background-color: var(--text-color2);
 }
 
 /* Header Content */
 header {
     justify-content: space-between;
-}
-
-#logoAndName span {
-    color: var(--text-color1);
 }
 
 #logoAndName {
@@ -36,7 +34,6 @@ header {
 
 #headerAndNav {
     border-bottom: 2px solid var(--border-color1);
-    background-color: var(--text-color2);
 }
 
 #currentPage {
