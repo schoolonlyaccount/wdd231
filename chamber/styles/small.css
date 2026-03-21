@@ -18,7 +18,6 @@ nav {
     max-height: 1px;
     overflow: hidden;
     text-align: center;
-    background-color: #B59564;
     border-top: 2px solid var(--background-color);
     transition: max-height 0.2s ease, border-color 0.3s ease;
     color: var(--text-color1);

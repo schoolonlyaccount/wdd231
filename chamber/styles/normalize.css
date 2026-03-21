@@ -40,6 +40,10 @@ header {
     text-decoration: underline;
 }
 
+#otherPages {
+    background-color: #B59564;
+}
+
 /* Main Content */
 main h1 {
     padding: 1rem 0 0 2rem;
