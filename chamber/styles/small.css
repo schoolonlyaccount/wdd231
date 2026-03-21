@@ -6,7 +6,7 @@
     border-radius: 16px;
     border: none;
     background-color: var(--border-color1);
-    color: var(--background-color);
+    color: var(--text-color2);
 }
 
 #hamburger:hover {
