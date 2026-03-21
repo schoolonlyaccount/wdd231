@@ -5,21 +5,21 @@
     <!-- Basics -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | Kell Brine | WDD 231</title>
+    <title>Lantana Chamber of Commerce - Home | Kell Brine | WDD 231</title>
     <meta name="author" content="Kell Brine">
     <meta name="description"
-        content="This is the Directory page for course WDD 231. Here, you can find events, businesses, and weather information within the region of Lantana">
+        content="This is the Lantana Chamber of Commerce Home page for course WDD 231. Here, you can find events, businesses, and weather information.">
 
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
 
     <!-- Social media -->
-    <meta property="og:title" content="Directory - Home Page | Kell Brine | WDD 231">
+    <meta property="og:title" content="Lanatana Chamber of Commerce - Home Page | Kell Brine | WDD 231">
     <meta property="og:description"
-        content="This is the Directory page for course WDD 231. Here, you can find events, businesses, and weather information within the region of Lantana">
+        content="This is the Lantana Chamber of Commerce Home page for course WDD 231. Here, you can find events, businesses, and weather information.">
     <meta property="og:image"
         content="https://raw.githubusercontent.com/schoolonlyaccount/wdd231/refs/heads/main/chamber/facebook-meta-logo.png">
-    <meta property="og:url" content="https://schoolonlyaccount.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://schoolonlyaccount.github.io/wdd231/chamber/index.html">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,20 +48,45 @@
         </header>
         <div id="otherPages">
             <nav>
-                <a href="home.html">Home</a>
-                <a id="currentPage" href="directory.html">Directory</a>
+                <a id="currentPage" href="home.html">Home</a>
+                <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
                 <a href="discover.html">Discover</a>
             </nav>
         </div>
     </div>
     <main>
-        <h1>Directory</h1>
-        <div id="memberButtons">
-            <button id="showMembersGrid">Grid View</button>
-            <button id="showMembersList">List View</button>
-        </div>
-        <div id="membersContainer"></div>
+        <section id="hero">
+            <img src="images/chamber-hero.png" alt="Chamber of Commerce">
+            <div id="heroText">
+                <h1>Welcome to the Chamber!</h1>
+                <a href="join.html" id="ctaJoin">Join the Chamber!</a>
+            </div>
+        </section>
+
+        <h1>Home</h1>
+        <section id="highlight">
+            <section id="events" class="homeSection">
+                <h2>Events</h2>
+            </section>
+            <section id="weather" class="homeSection">
+                <h2>Current Weather</h2>
+                <div>
+                    <img id="weatherIcon" src="" alt="">
+                    <figcaption id="weatherDesc"></figcaption>
+                    <p id="weatherTemp"></p>
+                </div>
+            </section>
+            <section id="forecast" class="homeSection">
+                <h2>Weather Forecast</h2>
+                <div>
+                    <p id="forecastToday"></p>
+                    <p id="forecastTomorrow"></p>
+                    <p id="forecastAfterTomorrow"></p>
+                </div>
+            </section>
+        </section>
+        <section id="spotlightContainer"></section>
     </main>
     <footer>
         <div id="contactInfo">

@@ -1,10 +1,4 @@
-/* Header & Nav Container content*/
-
-#headerAndNav {
-    font-size: 1.5rem;
-}
-
-/* Header Content */
+/* Hamburger For Navigation */
 #hamburger {
     width: 96px;
     height: auto;
@@ -19,7 +13,7 @@
     cursor: pointer;
 }
 
-/* Nav Content */
+/* Navigation */
 nav {
     max-height: 0;
     overflow: hidden;
@@ -51,6 +45,239 @@ nav a:hover {
     color: var(--text-color2);
 }
 
+/* Member Cards - Directory page */
+#memberButtons {
+    justify-content: center;
+    gap: 2rem;
+    display: flex;
+    padding: 1rem;
+}
+
+#showMembersGrid,
+#showMembersList {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+#membersContainer {
+    min-height: 800px;
+}
+
+.grid,
+#spotlightContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+.memberCard,
+.memberSpotlightCard {
+    border: 2px solid var(--border-color1);
+    border-radius: 12px;
+    background-color: var(--primary-color);
+}
+
+.memberCard h2,
+.memberSpotlightCard h2 {
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--text-color2);
+    background-color: var(--secondary-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.memberCard .memberImageAndText,
+.memberSpotlightCard .memberImageAndText {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.memberCard img,
+.memberSpotlightCard img {
+    width: 128px;
+    height: 128px;
+    margin: auto 0;
+    border: 1px solid var(--border-color1);
+    border-radius: 12px;
+    margin-right: 1rem;
+    background-color: black;
+}
+
+.memberCard .memberJustText,
+.memberSpotlightCard .memberJustText {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex: 1;
+}
+
+.memberCard p,
+.memberSpotlightCard p {
+    margin-bottom: 0.5rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.memberCard p:first-child,
+.memberSpotlightCard p:first-child {
+    margin-top: 0.5rem;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.list .memberCard img {
+    display: none;
+}
+
+/* Hero image - Home page */
+#hero {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    position: relative;
+    margin: 0 1rem;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#heroText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5rem;
+    width: 90%;
+    max-width: 600px;
+    z-index: 1;
+    color: white;
+}
+
+
+/* Events, Weather, Forecast - Home page */
+#highlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin: 0 1rem;
+}
+
+.homeSection {
+    border: 2px solid black;
+    background-color: var(--primary-color);
+}
+
+.homeSection h2 {
+    padding: 0.2rem 0.5rem;
+    border-bottom: 1px solid black;
+    background-color: var(--secondary-color);
+    color: var(--text-color2);
+}
+
+#weather div {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#weather p {
+    padding: 1rem 0;
+}
+
+#forecast div {
+    font-size: 1.5rem;
+}
+
+#forecast p:first-child {
+    padding-top: 1rem;
+}
+
+#forecast p {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+#forecast,
+#weather {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+/* Spotlight Members - Home page */
+#spotlightContainer {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+/*
+.memberSpotlightCard {
+    border: 2px solid var(--border-color1);
+    background-color: var(--primary-color);
+}
+
+.memberSpotlightCard h2 {
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--text-color2);
+    background-color: var(--secondary-color);
+}
+
+.memberSpotlightCard .memberImageAndText {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.memberSpotlightCard img {
+    width: 128px;
+    height: 128px;
+    margin: auto 0;
+    border: 1px solid var(--border-color1);
+    border-radius: 12px;
+    margin-right: 1rem;
+    background-color: black;
+    align-self: center;
+}
+
+.memberSpotlightCard .memberJustText {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex: 1;
+}
+
+.memberSpotlightCard p {
+    margin-bottom: 0.5rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.memberSpotlightCard p:first-child {
+    margin-top: 0.5rem;
+}
+*/
+
 /* Multiple Things */
 #headerAndNav,
 nav,
@@ -62,4 +289,9 @@ footer {
 header,
 nav a {
     padding: 0.5rem 1rem;
+}
+
+/* Misc Things */
+#headerAndNav {
+    font-size: 1.5rem;
 }
