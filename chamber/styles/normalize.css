@@ -4,6 +4,7 @@
     --secondary-color: #4042B0;
     --background-color: #DA9020;
     --nav-hover-color: #595B2C;
+    --nav-prehover-color: #B59564;
     --border-color1: black;
     --text-color1: black;
     --text-color2: white;
@@ -24,9 +25,8 @@ body {
 }
 
 /* Header Content */
-#headerAndNav,
-#headerAndNav * {
-    background-color: var(--background-color) !important;
+#headerAndNav {
+    border-bottom: 2px solid var(--border-color1);
 }
 
 header {
@@ -37,18 +37,8 @@ header {
     gap: 0.8rem;
 }
 
-#headerAndNav {
-    border-bottom: 2px solid var(--border-color1);
-    color: var(--text-color1);
-}
-
 #currentPage {
     text-decoration: underline;
-}
-
-#otherPages {
-    background-color: #B59564;
-    color: var(--text-color1);
 }
 
 /* Main Content */
@@ -63,7 +53,6 @@ footer {
     font-size: 1.4rem;
     border-top: 2px solid var(--border-color1);
     gap: 1.5rem;
-    background-color: var(--background-color);
 }
 
 #socials {
@@ -82,8 +71,7 @@ footer {
 
 /* Multiple Things */
 header,
-footer,
-#headerAndNav {
+footer {
     background-color: var(--background-color);
 }
 
