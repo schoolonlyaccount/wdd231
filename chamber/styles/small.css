@@ -15,7 +15,7 @@
 
 /* Navigation */
 nav {
-    max-height: 0;
+    max-height: 1px;
     overflow: hidden;
     text-align: center;
     background-color: #B59564;
