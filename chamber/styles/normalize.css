@@ -66,6 +66,10 @@ footer {
     padding-right: 1rem;
 }
 
+#contactInfo a {
+    color: var(--text-color1);
+}
+
 /* Multiple Things */
 header,
 footer {

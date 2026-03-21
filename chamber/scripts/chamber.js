@@ -12,11 +12,8 @@ document.getElementById("hamburger").addEventListener("click", () => {
 });
 
 // Close mobile nav when not mobile view
-if (window.matchMedia("(min-width: 768px)").addEventListener("change", e => {
-    if (e.matches) {
-        nav.classList.remove("active");
-    }
-}));
+const mq = window.matchMedia("(min-width: 768px)");
+mq.addEventListener("change", e => { if (e.matches) nav.classList.remove("active"); });
 
 // Members
 const membersContainer = document.getElementById("membersContainer");
@@ -146,7 +143,7 @@ async function apiFetchWeatherAll() {
         const response = await fetch(urlWeather);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            //console.log(data);
             displayWeatherResults(data);
         }
         else {
@@ -161,7 +158,7 @@ async function apiFetchWeatherAll() {
         const response = await fetch(urlForecast);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            //console.log(data);
             displayForecastResults(data);
         }
         else {

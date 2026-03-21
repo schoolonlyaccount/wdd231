@@ -69,12 +69,12 @@ nav a:hover {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1rem;
     margin: 1rem;
+    min-height: 300px;
 }
 
 .memberCard,
 .memberSpotlightCard {
     border: 2px solid var(--border-color1);
-    border-radius: 12px;
     background-color: var(--primary-color);
 }
 
@@ -84,8 +84,6 @@ nav a:hover {
     text-align: center;
     color: var(--text-color2);
     background-color: var(--secondary-color);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
 }
 
 .memberCard .memberImageAndText,
@@ -126,6 +124,11 @@ nav a:hover {
     margin-top: 0.5rem;
 }
 
+.memberCard a,
+.memberSpotlightCard a {
+    color: var(--text-color1);
+}
+
 .list {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
@@ -144,11 +147,13 @@ nav a:hover {
     border-left: 2px solid black;
     position: relative;
     margin: 0 1rem;
+    aspect-ratio: 16 / 6;
 }
 
 #hero img {
     width: 100%;
     height: auto;
+    object-fit: cover;
     display: block;
 }
 
@@ -193,9 +198,21 @@ nav a:hover {
     color: var(--text-color2);
 }
 
-#weather div {
+#weather div,
+#weatherDesc {
     text-align: center;
     font-size: 1.5rem;
+    min-height: 3rem;
+}
+
+#weather img {
+    min-width: 100px;
+    min-height: 100px;
+}
+
+#weather p,
+#weatherDesc {
+    padding: 0.5rem 0;
 }
 
 #weather p {
@@ -213,6 +230,7 @@ nav a:hover {
 #forecast p {
     padding-bottom: 1rem;
     padding-left: 1rem;
+    min-height: 1.5rem;
 }
 
 #forecast,
@@ -229,54 +247,6 @@ nav a:hover {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
 }
-
-/*
-.memberSpotlightCard {
-    border: 2px solid var(--border-color1);
-    background-color: var(--primary-color);
-}
-
-.memberSpotlightCard h2 {
-    padding: 0.5rem;
-    text-align: center;
-    color: var(--text-color2);
-    background-color: var(--secondary-color);
-}
-
-.memberSpotlightCard .memberImageAndText {
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-}
-
-.memberSpotlightCard img {
-    width: 128px;
-    height: 128px;
-    margin: auto 0;
-    border: 1px solid var(--border-color1);
-    border-radius: 12px;
-    margin-right: 1rem;
-    background-color: black;
-    align-self: center;
-}
-
-.memberSpotlightCard .memberJustText {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    flex: 1;
-}
-
-.memberSpotlightCard p {
-    margin-bottom: 0.5rem;
-    overflow-wrap: break-word;
-    word-break: break-word;
-}
-
-.memberSpotlightCard p:first-child {
-    margin-top: 0.5rem;
-}
-*/
 
 /* Multiple Things */
 #headerAndNav,
