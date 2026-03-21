@@ -148,6 +148,7 @@ nav a:hover {
     position: relative;
     margin: 0 1rem;
     aspect-ratio: 16 / 6;
+    background-color: var(--border-color1);
 }
 
 #hero img {
@@ -175,6 +176,11 @@ nav a:hover {
     max-width: 600px;
     z-index: 1;
     color: white;
+    min-height: 150px;
+}
+
+#heroText a {
+    color: var(--text-color2);
 }
 
 
@@ -202,7 +208,6 @@ nav a:hover {
 #weatherDesc {
     text-align: center;
     font-size: 1.5rem;
-    min-height: 3rem;
 }
 
 #weather img {
@@ -259,6 +264,11 @@ footer {
 header,
 nav a {
     padding: 0.5rem 1rem;
+}
+
+#weather div,
+#forecast div {
+    min-height: 60px;
 }
 
 /* Misc Things */
