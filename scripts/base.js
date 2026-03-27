@@ -13,6 +13,26 @@ hamburger.addEventListener('click', () => {
     nav.classList.toggle("active");
 });
 
+// Course details modal
+const courseDetails = document.getElementById("courseDetails");
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    document.getElementById("closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
 // An array of courses
 const courses = [
     {
@@ -108,6 +128,10 @@ function displayCourses(courseList) {
         card.textContent = `${course.subject} ${course.number} ${course.completed ? '✔' : ""}`;
 
         courseContainer.appendChild(card);
+
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
     });
 
     creditDisplay.textContent = courseList.reduce((sum, course) => sum + course.credits, 0);

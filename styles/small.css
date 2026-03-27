@@ -68,6 +68,41 @@ header {
     background-color: var(--tertiary-color);
 }
 
+/* --------------- */
+/*[     Modal     ]*/
+/* --------------- */
+
+#courseDetails {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 1rem black;
+    margin: auto auto;
+    max-width: 500px;
+}
+
+#courseDetails::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+#courseDetails button {
+    position: absolute;
+    right: 1rem;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+}
+
+#courseDetails button:hover {
+    cursor: pointer;
+}
+
+#courseDetails>* {
+    padding: 0.5rem;
+}
+
 /* ------------------ */
 /*[ Exclusive Things ]*/
 /* ------------------ */
@@ -240,6 +275,8 @@ header,
 
 #all:hover,
 #cse:hover,
-#wdd:hover {
+#wdd:hover,
+#courses div:hover {
     background-color: #F573F9;
+    cursor: pointer;
 }
