@@ -204,3 +204,80 @@ function displayForecastResults(data) {
 function CapitalizeAllWordsSimple(str) {
     return str.toLowerCase().split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
 }
+
+// Form timestamp
+document.addEventListener("DOMContentLoaded", () => {
+    const formTimestamp = document.getElementById("formTimestamp");
+    if (formTimestamp) {
+        formTimestamp.value = new Date().toLocaleString();
+    }
+});
+
+// Form Thank you page
+const formParams = new URLSearchParams(window.location.search);
+
+const formFirstName = document.getElementById("submittedFirstName")
+if (formFirstName) { formFirstName.textContent = formParams.get("firstName"); }
+
+const formLastName = document.getElementById("submittedLastName")
+if (formLastName) { formLastName.textContent = formParams.get("lastName"); }
+
+const formEmail = document.getElementById("submittedEmail")
+if (formEmail) { formEmail.textContent = formParams.get("email"); }
+
+const formPhoneNumber = document.getElementById("submittedPhoneNumber")
+if (formPhoneNumber) { formPhoneNumber.textContent = formParams.get("phoneNumber"); }
+
+const formOrgName = document.getElementById("submittedOrgName")
+if (formOrgName) { formOrgName.textContent = formParams.get("orgName"); }
+
+const formTimestampSubmit = document.getElementById("submittedTimestamp")
+if (formTimestampSubmit) { formTimestampSubmit.textContent = formParams.get("timestamp"); }
+
+// Modals - Join page
+const membershipModal1 = document.getElementById("membershipModal1");
+const membershipModal2 = document.getElementById("membershipModal2");
+const membershipModal3 = document.getElementById("membershipModal3");
+const membershipModal4 = document.getElementById("membershipModal4");
+const closeModalButton1 = document.getElementById("closeModal1");
+const closeModalButton2 = document.getElementById("closeModal2");
+const closeModalButton3 = document.getElementById("closeModal3");
+const closeModalButton4 = document.getElementById("closeModal4");
+const npModalButton = document.getElementById("openModalNP");
+const bronzeModalButton = document.getElementById("openModalBronze");
+const silverModalButton = document.getElementById("openModalSilver");
+const goldModalButton = document.getElementById("openModalGold");
+
+// Opening Modal
+npModalButton.addEventListener("click", () => {
+    membershipModal1.showModal();
+});
+
+bronzeModalButton.addEventListener("click", () => {
+    membershipModal2.showModal();
+});
+
+silverModalButton.addEventListener("click", () => {
+    membershipModal3.showModal();
+});
+
+goldModalButton.addEventListener("click", () => {
+    membershipModal4.showModal();
+});
+
+// Closing Modal
+closeModalButton1.addEventListener("click", () => {
+    membershipModal1.close();
+});
+
+closeModalButton2.addEventListener("click", () => {
+    membershipModal2.close();
+});
+
+closeModalButton3.addEventListener("click", () => {
+    membershipModal3.close();
+});
+
+closeModalButton4.addEventListener("click", () => {
+    membershipModal4.close();
+});

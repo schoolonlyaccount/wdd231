@@ -259,6 +259,201 @@ nav a:hover {
     grid-gap: 1rem;
 }
 
+/* Form - Join Page */
+#formAndMembershipLevels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 1rem;
+    gap: 1rem;
+}
+
+#joinForm form {
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+#joinForm>h2,
+#joinMembershipLevels>h2 {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color2);
+    width: 80%;
+    margin: 0 auto;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+#joinMembershipLevels>h2 {
+    border-radius: 12px;
+}
+
+#joinForm label,
+#joinForm>input,
+#joinForm textarea {
+    display: block;
+}
+
+#joinForm input,
+#joinForm textarea {
+    width: 100%;
+    border-left: 6px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+}
+
+#joinForm textarea {
+    resize: none;
+    height: 150px;
+}
+
+#joinForm label,
+#joinForm legend {
+    font-size: 1.5rem;
+}
+
+#joinForm input,
+#joinForm textarea,
+#joinForm fieldset label {
+    font-size: 1.2rem;
+}
+
+#joinForm fieldset input {
+    width: 32px;
+    transform: scale(1.6);
+}
+
+#joinForm fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#joinForm button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+#joinForm button:hover,
+#joinForm fieldset input:hover,
+#joinForm fieldset label:hover {
+    cursor: pointer;
+}
+
+/* Membership cards - Join page */
+#membershipCardsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#membershipCardsContainer div {
+    border: 1px solid black;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem auto;
+    width: 75%;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: var(--primary-color);
+
+    opacity: 0;
+    transform: translateY(32px) scaleX(1.2);
+    animation: fadeSlideIn 0.5s ease forwards;
+}
+
+#membershipCardsContainer div:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#membershipCardsContainer div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#membershipCardsContainer div:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+#membershipCardsContainer div:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0) scaleX(1);
+    }
+}
+
+#membershipCardsContainer p {
+    margin-bottom: 2rem;
+}
+
+#membershipCardsContainer p,
+#membershipCardsContainer button,
+#membershipCardsContainer dialog ul {
+    font-size: 1.4rem;
+}
+
+#membershipCardsContainer button {
+    padding: 0.5rem;
+}
+
+#membershipCardsContainer dialog {
+    margin: auto auto;
+    width: 90%;
+    padding: 1.5rem;
+    border-radius: 24px;
+    text-align: left;
+}
+
+#membershipCardsContainer dialog h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+#membershipCardsContainer dialog ul {
+    margin-left: 1rem;
+}
+
+#membershipCardsContainer dialog button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 48px;
+}
+
+#membershipCardsContainer dialog::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+/* Submitted Application Information - Thankyou page*/
+#thankyouPageH1,
+#thankyouPageP {
+    text-align: center;
+    padding: 0;
+    margin: 1rem;
+}
+
+#submittedApplicationInfo {
+    border: 2px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#submittedApplicationInfo h2 {
+    font-size: 2rem;
+}
+
+#submittedApplicationInfo p,
+#thankyouPageP {
+    font-size: 1.5rem;
+}
+
 /* Multiple Things */
 #headerAndNav,
 nav,

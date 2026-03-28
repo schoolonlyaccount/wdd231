@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lantana Chamber of Commerce - Join | Kell Brine | WDD 231</title>
+    <meta name="author" content="Kell Brine">
+    <meta name="description"
+        content="This is the Lantana Chamber of Commerce Join page for course WDD 231. Here, you can find apply to become a member of the commerce.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico">
+
+    <!-- Social media -->
+    <meta property="og:title" content="Lantana Chamber of Commerce - Join | Kell Brine | WDD 231">
+    <meta property="og:description"
+        content="This is the Lantana Chamber of Commerce Join page for course WDD 231. Here, you can find apply to become a member of the commerce.">
+    <meta property="og:image" content="https://schoolonlyaccount.github.io/wdd231/chamber/facebook-meta-logo.png">
+    <meta property="og:url" content="https://schoolonlyaccount.github.io/wdd231/chamber/index.html">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Scripts -->
+    <script src="scripts/chamber.js" defer></script>
+</head>
+
+<body>
+    <div id="headerAndNav">
+        <header>
+            <div id="logoAndName">
+                <img src="images/directory-logo.png" width="48" height="48" alt="Directory logo">
+                <span>Lantana Chamber of Commerce</span>
+            </div>
+
+            <button id="hamburger">☰</button>
+        </header>
+        <div id="otherPages">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a id="currentPage" href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <h1>Join</h1>
+        <div id="formAndMembershipLevels">
+            <section id="joinForm">
+                <h2>Membership Application Form</h2>
+                <form action="thankyou.html" method="GET">
+                    <!-- First Name -->
+                    <label>
+                        First Name
+                        <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <!-- Last Name -->
+                    <label>
+                        Last Name
+                        <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <!-- Organization Title -->
+                    <label>
+                        Organization Title
+                        <input type="text" name="orgTitle" title="Enter your organization title"
+                            autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}">
+                    </label>
+
+                    <!-- Email Address -->
+                    <label>
+                        Email Address
+                        <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                            placeholder="example@email.com" required>
+                    </label>
+
+                    <!-- Phone Number -->
+                    <label>
+                        Phone Number
+                        <input type="tel" name="phoneNumber" title="Enter your phone number" autocomplete="tel"
+                            required>
+                    </label>
+
+                    <!-- Organization Name -->
+                    <label>
+                        Organization Name
+                        <input type="text" name="orgName" title="Enter your organization name"
+                            autocomplete="organization" required>
+                    </label>
+
+                    <!-- Membership Level -->
+                    <fieldset>
+                        <legend>Membership Level</legend>
+                        <label>
+                            <input type="radio" name="membership" value="np" required>
+                            NP Membership (No Fee)
+                        </label>
+                        <label>
+                            <input type="radio" name="membership" value="bronze">
+                            Bronze Membership
+                        </label>
+                        <label>
+                            <input type="radio" name="membership" value="silver">
+                            Silver Membership
+                        </label>
+                        <label>
+                            <input type="radio" name="membership" value="gold">
+                            Gold Membership
+                        </label>
+                    </fieldset>
+
+                    <!-- Organization Description -->
+                    <label>
+                        Organization Description
+                        <textarea name="orgDescription" title="Describe your organization" rows="4"></textarea>
+                    </label>
+
+                    <!-- Timestamp -->
+                    <input type="hidden" id="formTimestamp" name="timestamp">
+
+                    <!-- Submit Button -->
+                    <button type="submit">Submit Application</button>
+                </form>
+            </section>
+            <section id="joinMembershipLevels">
+                <h2>Membership Levels</h2>
+                <div id="membershipCardsContainer">
+                    <div id="joinNPCard">
+                        <p>Non Profit Membership Level</p>
+                        <button id="openModalNP">Learn More</button>
+                        <dialog id="membershipModal1">
+                            <h2>NP Benefits</h2>
+                            <ul>
+                                <li>Free</li>
+                                <li>Access to community events</li>
+                            </ul>
+                            <button id="closeModal1">X</button>
+                        </dialog>
+                    </div>
+                    <div id="joinBronzeCard">
+                        <p>Bronze Membership Level</p>
+                        <button id="openModalBronze">Learn More</button>
+                        <dialog id="membershipModal2">
+                            <h2>Bronze Benefits</h2>
+                            <ul>
+                                <li>$100.00/year</li>
+                                <li>Access to community events</li>
+                                <li>Basic Directory listing</li>
+                            </ul>
+                            <button id="closeModal2">X</button>
+                        </dialog>
+                    </div>
+                    <div id="joinSilverCard">
+                        <p>Silver Membership Level</p>
+                        <button id="openModalSilver">Learn More</button>
+                        <dialog id="membershipModal3">
+                            <h2>Silver Benefits</h2>
+                            <ul>
+                                <li>$200.00/year</li>
+                                <li>Access to community events</li>
+                                <li>Basic & Spotlight Directory listing</li>
+                            </ul>
+                            <button id="closeModal3">X</button>
+                        </dialog>
+                    </div>
+                    <div id="joinGoldCard">
+                        <p>Gold Membership Level</p>
+                        <button id="openModalGold">Learn More</button>
+                        <dialog id="membershipModal4">
+                            <h2>Gold Benefits</h2>
+                            <ul>
+                                <li>$300.00/year</li>
+                                <li>Access to community & premium events</li>
+                                <li>Basic & Spotlight Directory listing</li>
+                            </ul>
+                            <button id="closeModal4">X</button>
+                        </dialog>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div id="contactInfo">
+            <address>
+                Lantana Chamber of Commerce<br>
+                123 Main Street<br>
+                Lantana, TX 33462<br>
+                <a href="mailto:info@lantanacc.org">info@lantanacc.org</a><br>
+                <a href="tel:+12235552300">(223) 555-2300</a>
+            </address>
+        </div>
+        <div id="socials">
+            <a href="https://www.youtube.com/"><img src="images/youtube-icon.svg" width="48" height="48"
+                    alt="Youtube icon"></a>
+            <a href="https://www.x.com/"><img src="images/x-icon.svg" width="48" height="48" alt="X icon"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin-icon.svg" width="48" height="48"
+                    alt="Linkedin icon"></a>
+        </div>
+        <div id="footerEnd">
+            <p>WDD231 Class Project</p>
+            <p>Kell Brine</p>
+            <p><span id="currentYear"></span> Lantana Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
