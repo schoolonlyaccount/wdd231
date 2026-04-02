@@ -1,0 +1,35 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: black;
+    color: #94FF8C;
+}
+
+#color1 {
+    color: #5043c0;
+}
+
+#color2 {
+    color: #558488;
+}
+
+#color3 {
+    color: #ffffff;
+}
+
+p:not(footer p),
+img {
+    margin-left: 1.5rem;
+}
+
+section:last-child div {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    color: #000000;
+}
