@@ -482,45 +482,44 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     background-color: var(--primary-color);
-    ;
+}
 
-    h2 {
-        background-color: var(--secondary-color);
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-        color: var(--text-color2);
-        font-size: 1.6rem;
-    }
+#areasOfInterestContainer section h2 {
+    background-color: var(--secondary-color);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: var(--text-color2);
+    font-size: 1.6rem;
+}
 
-    h2,
-    address,
-    p {
-        padding: 1rem;
-    }
+#areasOfInterestContainer section h2,
+#areasOfInterestContainer section address,
+#areasOfInterestContainer section p {
+    padding: 1rem;
+}
 
-    address,
-    p {
-        text-align: center;
-        font-size: 1.1rem;
-    }
+#areasOfInterestContainer section address,
+#areasOfInterestContainer section p {
+    text-align: center;
+    font-size: 1.1rem;
+}
 
-    img {
-        width: 100%;
-        height: auto;
-    }
+#areasOfInterestContainer section img {
+    width: 100%;
+    height: auto;
+}
 
-    button {
-        margin: 1rem;
-        padding: 0.5rem;
-        font-size: 1.2rem;
-        border-radius: 8px;
-        align-self: center;
-        width: 90%;
-    }
+#areasOfInterestContainer section button {
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    align-self: center;
+    width: 90%;
+}
 
-    button:hover {
-        cursor: pointer;
-    }
+#areasOfInterestContainer section button:hover {
+    cursor: pointer;
 }
 
 #areasOfInterestContainer section:nth-child(1) {

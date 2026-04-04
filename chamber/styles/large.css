@@ -76,42 +76,39 @@
 @media (min-width: 641px) {
 
     /* Areas of Interest */
-    #areasOfInterestContainer section {
+    #areasOfInterestContainer section div {
+        display: flex;
+        flex-direction: row;
+    }
 
-        div {
-            display: flex;
-            flex-direction: row;
-        }
+    #areasOfInterestContainer section div div {
+        display: flex;
+        flex-direction: column;
+    }
 
-        div div {
-            display: flex;
-            flex-direction: column;
-        }
+    #areasOfInterestContainer section h2 {
+        font-size: 1.4rem;
+    }
 
-        h2 {
-            font-size: 1.4rem;
-        }
+    #areasOfInterestContainer section address,
+    #areasOfInterestContainer section p {
+        font-size: 1rem;
+        text-align: left;
+    }
 
-        address,
-        p {
-            font-size: 1rem;
-            text-align: left;
-        }
+    #areasOfInterestContainer section button {
+        font-size: 1.1rem;
+    }
 
-        button {
-            font-size: 1.1rem;
-        }
+    #areasOfInterestContainer section img {
+        width: 300px;
+        height: 200px;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
 
-        img {
-            width: 300px;
-            height: 200px;
-            transition: box-shadow 0.3s ease, transform 0.3s ease;
-        }
-
-        img:hover {
-            box-shadow: 0 12px 12px rgba(0, 0, 0, 0.5);
-            transform: translate(3px, 2px) scale(1.02);
-        }
+    #areasOfInterestContainer section img:hover {
+        box-shadow: 0 12px 12px rgba(0, 0, 0, 0.5);
+        transform: translate(3px, 2px) scale(1.02);
     }
 }
 
@@ -127,18 +124,16 @@
             "g h";
     }
 
-    #areasOfInterestContainer section {
-        h2 {
-            font-size: 1.7rem;
-        }
+    #areasOfInterestContainer section h2 {
+        font-size: 1.7rem;
+    }
 
-        address,
-        p {
-            font-size: 1.2rem;
-        }
+    #areasOfInterestContainer section address,
+    #areasOfInterestContainer section p {
+        font-size: 1.2rem;
+    }
 
-        button {
-            font-size: 1.3rem;
-        }
+    #areasOfInterestContainer section button {
+        font-size: 1.3rem;
     }
 }
