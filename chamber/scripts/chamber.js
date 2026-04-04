@@ -1,3 +1,7 @@
+// Imported things
+import { places } from "../data/discover.mjs";
+
+
 // Copyright year
 const year = new Date().getFullYear();
 document.getElementById("currentYear").innerHTML = `© ${year}`;
@@ -248,36 +252,86 @@ const bronzeModalButton = document.getElementById("openModalBronze");
 const silverModalButton = document.getElementById("openModalSilver");
 const goldModalButton = document.getElementById("openModalGold");
 
-// Opening Modal
-npModalButton.addEventListener("click", () => {
-    membershipModal1.showModal();
-});
+if (membershipModal1) {
+    // Opening Modal
+    npModalButton.addEventListener("click", () => {
+        membershipModal1.showModal();
+    });
 
-bronzeModalButton.addEventListener("click", () => {
-    membershipModal2.showModal();
-});
+    bronzeModalButton.addEventListener("click", () => {
+        membershipModal2.showModal();
+    });
 
-silverModalButton.addEventListener("click", () => {
-    membershipModal3.showModal();
-});
+    silverModalButton.addEventListener("click", () => {
+        membershipModal3.showModal();
+    });
 
-goldModalButton.addEventListener("click", () => {
-    membershipModal4.showModal();
-});
+    goldModalButton.addEventListener("click", () => {
+        membershipModal4.showModal();
+    });
 
-// Closing Modal
-closeModalButton1.addEventListener("click", () => {
-    membershipModal1.close();
-});
+    // Closing Modal
+    closeModalButton1.addEventListener("click", () => {
+        membershipModal1.close();
+    });
 
-closeModalButton2.addEventListener("click", () => {
-    membershipModal2.close();
-});
+    closeModalButton2.addEventListener("click", () => {
+        membershipModal2.close();
+    });
 
-closeModalButton3.addEventListener("click", () => {
-    membershipModal3.close();
-});
+    closeModalButton3.addEventListener("click", () => {
+        membershipModal3.close();
+    });
 
-closeModalButton4.addEventListener("click", () => {
-    membershipModal4.close();
-});
+    closeModalButton4.addEventListener("click", () => {
+        membershipModal4.close();
+    });
+}
+
+
+// For the Discover page
+const areasOfInterestContainer = document.getElementById("areasOfInterestContainer");
+if (areasOfInterestContainer) {
+    places.forEach(place => {
+        const card = document.createElement("section");
+
+        card.innerHTML = `
+        <h2>${place.name}</h2>
+        <div>
+            <figure>
+                <img src="${place.image}" alt="${place.name}" loading="lazy" width="300" height="200">
+            </figure>
+            <div>
+                <address>${place.address}</address>
+                <p>${place.description}</p>
+            </div>
+        </div>
+        <button>Learn More</button>
+        `;
+
+        areasOfInterestContainer.appendChild(card);
+    });
+}
+
+// Local Storage for Discover Page
+const visitMessage = document.getElementById("visitMessage");
+if (visitMessage) {
+    const lastVisit = localStorage.getItem("lastVisit");
+    const timeNow = Date.now();
+
+    let message = "";
+    if (!lastVisit) {
+        message = "Welcome! Let us know if you have any questions.";
+    } else {
+        const diffTime = timeNow - Number(lastVisit);
+        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+        if (diffDays < 1) {
+            message = "Back so soon! Awesome!";
+        } else {
+            message = `You last visited ${diffDays} day(s) ago.`;
+        }
+    }
+
+    visitMessage.textContent = message;
+}

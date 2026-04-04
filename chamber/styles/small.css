@@ -431,7 +431,7 @@ nav a:hover {
     background-color: rgb(0 0 0 / 50%);
 }
 
-/* Submitted Application Information - Thankyou page*/
+/* Submitted Application Information - Thankyou page */
 #thankyouPageH1,
 #thankyouPageP {
     text-align: center;
@@ -452,6 +452,107 @@ nav a:hover {
 #submittedApplicationInfo p,
 #thankyouPageP {
     font-size: 1.5rem;
+}
+
+/* Areas of Interest - Discover page */
+#visitMessage {
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#areasOfInterestContainer {
+    display: grid;
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "h";
+    gap: 1rem;
+    margin: 1rem;
+}
+
+#areasOfInterestContainer section {
+    border: 2px solid black;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    ;
+
+    h2 {
+        background-color: var(--secondary-color);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        color: var(--text-color2);
+        font-size: 1.6rem;
+    }
+
+    h2,
+    address,
+    p {
+        padding: 1rem;
+    }
+
+    address,
+    p {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        margin: 1rem;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        align-self: center;
+        width: 90%;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+}
+
+#areasOfInterestContainer section:nth-child(1) {
+    grid-area: a;
+}
+
+#areasOfInterestContainer section:nth-child(2) {
+    grid-area: b;
+}
+
+#areasOfInterestContainer section:nth-child(3) {
+    grid-area: c;
+}
+
+#areasOfInterestContainer section:nth-child(4) {
+    grid-area: d;
+}
+
+#areasOfInterestContainer section:nth-child(5) {
+    grid-area: e;
+}
+
+#areasOfInterestContainer section:nth-child(6) {
+    grid-area: f;
+}
+
+#areasOfInterestContainer section:nth-child(7) {
+    grid-area: g;
+}
+
+#areasOfInterestContainer section:nth-child(8) {
+    grid-area: h;
 }
 
 /* Multiple Things */

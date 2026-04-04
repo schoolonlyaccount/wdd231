@@ -5,18 +5,18 @@
     <!-- Basics -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lantana Chamber of Commerce - Thank you | Kell Brine | WDD 231</title>
+    <title>Lantana Chamber of Commerce - Discover | Kell Brine | WDD 231</title>
     <meta name="author" content="Kell Brine">
     <meta name="description"
-        content="This is the Lantana Chamber of Commerce Thank you page for course WDD 231. Here, you will be thanked and displayed your info.">
+        content="This is the Lantana Chamber of Commerce Discover page for course WDD 231. Here, you can find places of interest.">
 
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
 
     <!-- Social media -->
-    <meta property="og:title" content="Lantana Chamber of Commerce - Thank you | Kell Brine | WDD 231">
+    <meta property="og:title" content="Lantana Chamber of Commerce - Discover | Kell Brine | WDD 231">
     <meta property="og:description"
-        content="This is the Lantana Chamber of Commerce Thank you page for course WDD 231. Here, you will be thanked and displayed your info.">
+        content="This is the Lantana Chamber of Commerce Discover page for course WDD 231. Here, you can find places of interest.">
     <meta property="og:image" content="https://schoolonlyaccount.github.io/wdd231/chamber/facebook-meta-logo.png">
     <meta property="og:url" content="https://schoolonlyaccount.github.io/wdd231/chamber/index.html">
 
@@ -49,22 +49,15 @@
                 <a href="index.html">Home</a>
                 <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
-                <a href="discover.html">Discover</a>
+                <a id="currentPage" href="discover.html">Discover</a>
             </nav>
         </div>
     </div>
     <main>
-        <h1 id="thankyouPageH1">Thank you!</h1>
-        <p id="thankyouPageP">Your application has been submitted.</p>
-        <section id="submittedApplicationInfo">
-            <h2>Your provided information</h2>
-            <p><strong>First Name:</strong> <span id="submittedFirstName"></span></p>
-            <p><strong>Last Name:</strong> <span id="submittedLastName"></span></p>
-            <p><strong>Email:</strong> <span id="submittedEmail"></span></p>
-            <p><strong>Phone Number:</strong> <span id="submittedPhoneNumber"></span></p>
-            <p><strong>Organization Name:</strong> <span id="submittedOrgName"></span></p>
-            <p><strong>Submitted:</strong> <span id="submittedTimestamp"></span></p>
-        </section>
+        <h1>Discover</h1>
+        <!-- Content Here -->
+        <p id="visitMessage"></p>
+        <div id="areasOfInterestContainer"></div>
     </main>
     <footer>
         <div id="contactInfo">
